@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alarm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <div id="timer">
+        <div class="clock">
+            <div class="circle" style="--clr:#ff2972;">
+                <div class="dots hr_dots"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" />
+                    <circle id="hh" cx="70" cy="70" r="70" />
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:#fee800;">
+                <div class="dots min_dots"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" />
+                    <circle id="mm" cx="70" cy="70" r="70" />
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr:#04fc43;">
+                <div class="dots sec_dots"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" />
+                    <circle id="ss" cx="70" cy="70" r="70" />
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            <div class="ap">
+                <div id="ampm">AM</div>
+            </div>
+        </div>
+
+        
+        <div class="alarm">
+            <h2>Set Alarm</h2>
+
+            <div class="alarmForm" id="alarmContent">
+                
+                <div class="column">
+                    <select id="inputHour">
+                        <option value="Hours" selected >Hours</option>
+                        <!-- <option value="01" selected>01</option>
+                        <option value="02" selected>02</option> -->
+                    </select>
+                </div>
+
+                <div class="column">
+                    <select id="inputMin">
+                        <option value="Minutes" selected >Minutes</option>
+                        <!-- <option value="01" selected>01</option>
+                        <option value="02" selected>02</option> -->
+                    </select>
+
+                </div>
+
+                <div class="column">
+                    <select id="inputampm">
+                        <option value="AM/PM" selected>AM/PM</option>
+                        <!-- <option value="AM" selected>AM</option>
+                        <option value="PM" selected>PM</option> -->
+                    </select>
+                </div>
+                <br>
+                
+            </div>
+            <a  id="alarmBtn">Set Alarm</a>
+
+        </div>
+    </div>
+
+
+    <script src="alarm.js"></script>
+</body>
+
+</html>
